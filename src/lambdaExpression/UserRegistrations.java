@@ -2,15 +2,15 @@ package lambdaExpression;
 
 @FunctionalInterface
 interface LambdaExpression {
-    public abstract String checkGmail(String gmailId);
+    public abstract String checkPassword(String password);
 
     class UserRegistration {
         public static void main(String[] args) {
             // Lambda expression with single parameter.
-            LambdaExpression gmailId1 = (gmailId) -> {
-                return "gmail:"+ gmailId;
+            LambdaExpression password1 = (password) -> {
+                return "password:" + password;
             };
-            System.out.println(gmailId1.checkGmail("sspra143@gmail"));
+            System.out.println(password1.checkPassword("Satya124@3456.com"));
 
         }
     }
