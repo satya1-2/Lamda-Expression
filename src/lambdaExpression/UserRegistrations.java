@@ -1,14 +1,17 @@
 package lambdaExpression;
+
 @FunctionalInterface
-interface LambdaExpression{
-    public abstract String checkLastName(String name);
-     class UserRegistration {
+interface LambdaExpression {
+    public abstract String checkPhoneNumber(String phoneNumber);
+
+    class UserRegistration {
         public static void main(String[] args) {
             // Lambda expression with single parameter.
-            LambdaExpression lastName1 = (name) -> {
-                return  name;
+            LambdaExpression phoneNumber1 = (phoneNumber) -> {
+                return phoneNumber;
             };
-            System.out.println(lastName1.checkLastName("Yadav"));
+            System.out.println(phoneNumber1.checkPhoneNumber("+91789543456"));
 
         }
-    }}
+    }
+}
